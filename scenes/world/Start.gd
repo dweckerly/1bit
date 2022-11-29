@@ -5,4 +5,3 @@ func _ready():
 		add_child(Global.player)
 		Global.player.set_position(Vector2(160, 90))
 		Global.start_game = true
-		print(Global.player.get_parent())
