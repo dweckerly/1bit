@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/world/Portal-Vertical.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/environment/ground/dirt-11.png" type="Texture" id=5]
+[ext_resource path="res://scenes/environment/trees/stump-0.tscn" type="PackedScene" id=6]
 [ext_resource path="res://art/environment/ground/dirt-4.png" type="Texture" id=7]
 [ext_resource path="res://art/environment/ground/dirt-3.png" type="Texture" id=8]
+[ext_resource path="res://scenes/environment/trees/tree-0.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/environment/trees/tree-1.tscn" type="PackedScene" id=10]
 
 [node name="YSort" type="YSort"]
 
@@ -126,5 +129,41 @@ position = Vector2( 208, 16 )
 [node name="rock-wall-31" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 240, 16 )
 
+[node name="rock-wall-32" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 272, -16 )
+
+[node name="rock-wall-33" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 304, -16 )
+
+[node name="rock-wall-34" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 272, 200 )
+
+[node name="rock-wall-35" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 304, 200 )
+
 [node name="2-West" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 96 )
+
+[node name="tree-1" parent="." instance=ExtResource( 9 )]
+position = Vector2( 304, 112 )
+
+[node name="tree-2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 312, 56 )
+
+[node name="tree-3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 272, 80 )
+
+[node name="tree-4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 280, 152 )
+
+[node name="tree-5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 304, 168 )
+
+[node name="tree-6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 288, 216 )
+
+[node name="tree-7" parent="." instance=ExtResource( 10 )]
+position = Vector2( 280, 48 )
+
+[node name="stump-0" parent="." instance=ExtResource( 6 )]
+position = Vector2( 232, 88 )
