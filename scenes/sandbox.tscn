@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/environment/rocks/rock-big-1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/environment/rocks/rock-0.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Weapon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/environment/trees/stump-0.tscn" type="PackedScene" id=6]
+
+[node name="Sandbox" type="Node2D"]
+position = Vector2( 2, 0 )
+
+[node name="wall" type="Node2D" parent="."]
+
+[node name="rock-wall-0" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 14, 16 )
+
+[node name="rock-wall-1" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 14, 48 )
+
+[node name="rock-wall-2" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 46, 16 )
+
+[node name="rock-wall-3" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 78, 16 )
+
+[node name="rock-wall-4" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 14, 80 )
+
+[node name="rock-wall-5" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 14, 112 )
+
+[node name="rock-wall-6" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 142, 16 )
+
+[node name="rock-wall-7" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 174, 16 )
+
+[node name="rock-wall-8" parent="wall" instance=ExtResource( 2 )]
+position = Vector2( 110, 16 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Weapon" parent="YSort" instance=ExtResource( 5 )]
+position = Vector2( 123, 74 )
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 123, 74 )
+
+[node name="StaticBody2D" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 159, 108 )
+
+[node name="StaticBody2D3" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 219, 137 )
+
+[node name="StaticBody2D2" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 68, 81 )
+
+[node name="stump-0" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 100, 103 )

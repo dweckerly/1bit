@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/rock-big-1.png-b874498e887700f9244815e3f633b1ae.stex"
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 8.0
+
+[node name="rock-big-1" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -3 )
+texture = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource( 1 )
