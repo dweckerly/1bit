@@ -7,7 +7,6 @@
 font_data = ExtResource( 2 )
 
 [node name="dialogue-box" type="Node2D"]
-visible = false
 z_index = 100
 
 [node name="Sprite" type="Sprite" parent="."]

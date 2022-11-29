@@ -2,8 +2,8 @@ extends Node
 
 var start_game = false
 
-var playerScene = load("res://scenes/Player.tscn")
-var player = playerScene.instance()
+var player_scene = load("res://scenes/Player.tscn")
+var player = player_scene.instance()
 var player_can_move = true
 
 var current_scene = null
@@ -24,7 +24,7 @@ func _deferred_goto_scene(path, player_position):
 	load_player(player_position)
 
 func load_player(player_position):
-	var player_scene = load("res://scenes/Player.tscn")
-	var player = player_scene.instance()
+	player_scene = load("res://scenes/Player.tscn")
+	player = player_scene.instance()
 	get_tree().current_scene.add_child(player)
 	player.set_position(Vector2(player_position))
