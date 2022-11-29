@@ -4,6 +4,7 @@ var start_game = false
 
 var playerScene = load("res://scenes/Player.tscn")
 var player = playerScene.instance()
+var player_can_move = true
 
 var current_scene = null
 
