@@ -24,7 +24,7 @@ func _deferred_goto_scene(path, player_position):
 	load_player(player_position)
 
 func load_player(player_position):
-	player_scene = load("res://scenes/Player.tscn")
+	#player_scene = load("res://scenes/Player.tscn")
 	player = player_scene.instance()
 	get_tree().current_scene.add_child(player)
 	player.set_position(Vector2(player_position))
