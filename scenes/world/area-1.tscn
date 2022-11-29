@@ -1,8 +1,89 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/world/Portal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/environment/rocks/rock-wall-2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/environment/rocks/rock-wall-1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/NPC.tscn" type="PackedScene" id=5]
 
 [node name="YSort" type="YSort"]
 
 [node name="1-North" parent="." instance=ExtResource( 2 )]
 position = Vector2( 160, 0 )
+
+[node name="rock wall" type="Node2D" parent="."]
+
+[node name="rock-wall-2" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 112, 16 )
+
+[node name="rock-wall-1" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 80, 16 )
+
+[node name="rock-wall-0" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 48, 16 )
+
+[node name="rock-wall-3" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 16, 16 )
+
+[node name="rock-wall-4" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 48 )
+
+[node name="rock-wall-5" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 16, 80 )
+
+[node name="rock-wall-6" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 16, 112 )
+
+[node name="rock-wall-7" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 208, 16 )
+
+[node name="rock-wall-8" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 240, 16 )
+
+[node name="rock-wall-9" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 272, 16 )
+
+[node name="rock-wall-10" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 304, 16 )
+
+[node name="rock-wall-11" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 304, 48 )
+
+[node name="rock-wall-12" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 304, 80 )
+
+[node name="rock-wall-13" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 304, 112 )
+
+[node name="rock-wall-14" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 16, 144 )
+
+[node name="rock-wall-15" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 16, 176 )
+
+[node name="rock-wall-16" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 48, 176 )
+
+[node name="rock-wall-17" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 304, 144 )
+
+[node name="rock-wall-18" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 304, 176 )
+
+[node name="rock-wall-19" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 272, 176 )
+
+[node name="rock-wall-20" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 240, 176 )
+
+[node name="rock-wall-21" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 80, 176 )
+
+[node name="rock-wall-22" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 112, 176 )
+
+[node name="rock-wall-23" parent="rock wall" instance=ExtResource( 1 )]
+position = Vector2( 208, 176 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 248, 88 )
