@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dirt-10.png-05729ebca115a8afb76bad9af280b4ae.stex"
+path="res://.import/fence-1.png-8d34e60163d9a10837b000d074930871.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/environment/rocks/dirt-10.png"
-dest_files=[ "res://.import/dirt-10.png-05729ebca115a8afb76bad9af280b4ae.stex" ]
+source_file="res://art/environment/misc/fence-1.png"
+dest_files=[ "res://.import/fence-1.png-8d34e60163d9a10837b000d074930871.stex" ]
 
 [params]
 

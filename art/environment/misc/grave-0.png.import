@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dirt-11.png-0d8719f557af623908e712c91f856ce2.stex"
+path="res://.import/grave-0.png-f74730b3a9a4086988a59fdd8099a8a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/environment/rocks/dirt-11.png"
-dest_files=[ "res://.import/dirt-11.png-0d8719f557af623908e712c91f856ce2.stex" ]
+source_file="res://art/environment/misc/grave-0.png"
+dest_files=[ "res://.import/grave-0.png-f74730b3a9a4086988a59fdd8099a8a6.stex" ]
 
 [params]
 

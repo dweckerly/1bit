@@ -1,15 +1,46 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/world/Portal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/NPC.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/environment/misc/fence-0.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/environment/misc/fence-1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/environment/misc/fence-2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/environment/misc/fence-3.tscn" type="PackedScene" id=9]
+[ext_resource path="res://art/environment/ground/dirt-11.png" type="Texture" id=10]
+[ext_resource path="res://art/environment/ground/dirt-12.png" type="Texture" id=11]
+[ext_resource path="res://art/environment/ground/dirt-4.png" type="Texture" id=12]
+[ext_resource path="res://art/environment/ground/dirt-3.png" type="Texture" id=13]
+[ext_resource path="res://scenes/environment/rocks/rock-1.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/environment/rocks/rock-0.tscn" type="PackedScene" id=15]
+[ext_resource path="res://art/environment/ground/dirt-2.png" type="Texture" id=16]
+[ext_resource path="res://scenes/world/Portal-Vertical.tscn" type="PackedScene" id=17]
 
 [node name="YSort" type="YSort"]
 
-[node name="1-North" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 0 )
+[node name="dirt" type="Node2D" parent="."]
+
+[node name="Dirt-11" type="Sprite" parent="dirt"]
+position = Vector2( 48, 56 )
+texture = ExtResource( 10 )
+
+[node name="Dirt-3" type="Sprite" parent="dirt"]
+position = Vector2( 72, 72 )
+texture = ExtResource( 13 )
+
+[node name="Dirt-4" type="Sprite" parent="dirt"]
+position = Vector2( 216, 112 )
+texture = ExtResource( 12 )
+
+[node name="Dirt-12" type="Sprite" parent="dirt"]
+position = Vector2( 88, 144 )
+texture = ExtResource( 11 )
+
+[node name="Dirt-5" type="Sprite" parent="dirt"]
+position = Vector2( 248, 144 )
+texture = ExtResource( 13 )
 
 [node name="rock wall" type="Node2D" parent="."]
 
@@ -49,12 +80,6 @@ position = Vector2( 304, 16 )
 [node name="rock-wall-11" parent="rock wall" instance=ExtResource( 4 )]
 position = Vector2( 304, 48 )
 
-[node name="rock-wall-12" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 304, 80 )
-
-[node name="rock-wall-13" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 304, 112 )
-
 [node name="rock-wall-14" parent="rock wall" instance=ExtResource( 4 )]
 position = Vector2( 16, 144 )
 
@@ -85,5 +110,36 @@ position = Vector2( 112, 176 )
 [node name="rock-wall-23" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 208, 176 )
 
-[node name="StaticBody2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 248, 88 )
+[node name="1-North" parent="." instance=ExtResource( 2 )]
+position = Vector2( 160, 0 )
+
+[node name="1-East" parent="." instance=ExtResource( 17 )]
+position = Vector2( 320, 96 )
+
+[node name="NPC" parent="." instance=ExtResource( 5 )]
+position = Vector2( 264, 80 )
+
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 104, 104 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 120, 104 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 192, 136 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 176, 136 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 208, 136 )
+
+[node name="rock-0" parent="." instance=ExtResource( 15 )]
+position = Vector2( 80, 48 )
+
+[node name="rock-1" parent="." instance=ExtResource( 14 )]
+position = Vector2( 272, 136 )
+
+[node name="Dirt-2" type="Sprite" parent="."]
+position = Vector2( 272, 48 )
+texture = ExtResource( 16 )
