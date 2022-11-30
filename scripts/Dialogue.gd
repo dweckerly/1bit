@@ -11,11 +11,12 @@ var text_node = dialogue.get_child(1)
 
 var active_dialogue = false
 var typing = false
-var count = 0
+var count = -1
 
 func show_dialogue(npc_id):
+	text_node.text = ""
 	if !active_dialogue:
-		count = 0
+		count = -1
 		var pos = 'bottom'
 		active_dialogue = true
 		get_tree().root.add_child(dialogue)
@@ -23,17 +24,32 @@ func show_dialogue(npc_id):
 			dialogue.position = BOTTOM_POS
 		if pos == 'top':
 			dialogue.position = TOP_POS
-	play_dialogue(npc_id, count)
-	count += 1
+	if !typing:
+		count += 1
+	play_dialogue(npc_id)
 
-func play_dialogue(npc_id, index):
+func play_dialogue(npc_id):
 	var text = data.dialogues[npc_id]
-	if index < text.size():
-		text_node.text = text[index]
+	if count < text.size():
+		if typing:
+			typing = false
+			type_text(text[count])
+		else:
+			typing = true
+			type_text(text[count])
 	else:
 		end_dialogue()
 
-	
+func type_text(text):
+	var chars = 0
+	while chars < len(text) - 1 and typing:
+		yield(get_tree().create_timer(0.01), "timeout")
+		if typing:
+			text_node.text += text[chars]
+			chars += 1
+	text_node.text = text
+	typing = false
+
 func end_dialogue():
 	if active_dialogue:
 		active_dialogue = false
