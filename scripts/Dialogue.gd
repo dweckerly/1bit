@@ -10,10 +10,10 @@ var text_node = dialogue.get_child(1)
 #var text_node = dialogue.get_node("RichTextLabel")
 
 var active_dialogue = false
+var typing = false
 var count = 0
 
 func show_dialogue(npc_id):
-	
 	if !active_dialogue:
 		count = 0
 		var pos = 'bottom'
@@ -32,9 +32,10 @@ func play_dialogue(npc_id, index):
 		text_node.text = text[index]
 	else:
 		end_dialogue()
-	
+
 	
 func end_dialogue():
 	if active_dialogue:
 		active_dialogue = false
-		get_tree().root.remove_child(dialogue)
+		typing = false
+		get_tree().root.call_deferred("remove_child", dialogue)

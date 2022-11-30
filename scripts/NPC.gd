@@ -16,14 +16,12 @@ func _on_Area2D_body_entered(body):
 		in_speaking_range = true
 		prompt_animplayer.play("prompt-idle")
 		dialogue_prompt.show()
-		print("in range to speak to NPC")
 
 func _on_Area2D_body_exited(body):
 	if body.name == "Player":
 		in_speaking_range = false
 		dialogue_prompt.hide()
 		Dialogue.end_dialogue()
-		print("out of range to speak to NPC")
 
 func _process(delta):
 	if Input.is_action_just_released("ui_accept"):
