@@ -1,10 +1,11 @@
 extends Node
 
-const data = preload("res://scripts/data/dialogueVars.gd")
-
 const BOTTOM_POS = Vector2(160, 148)
 const TOP_POS = Vector2(160, 32)
 
+const TYPE_SPEED = 0.02
+
+var data = preload("res://scripts/data/dialogueVars.gd")
 var dialogue = preload("res://scenes/ui/dialogue-box.tscn").instance()
 var text_node = dialogue.get_child(1)
 #var text_node = dialogue.get_node("RichTextLabel")
@@ -43,7 +44,7 @@ func play_dialogue(npc_id):
 func type_text(text):
 	var chars = 0
 	while chars < len(text) - 1 and typing:
-		yield(get_tree().create_timer(0.01), "timeout")
+		yield(get_tree().create_timer(TYPE_SPEED), "timeout")
 		if typing:
 			text_node.text += text[chars]
 			chars += 1
