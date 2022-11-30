@@ -141,7 +141,7 @@ position = Vector2( 80, 48 )
 [node name="rock-1" parent="." instance=ExtResource( 14 )]
 position = Vector2( 272, 136 )
 
-[node name="NPC" parent="." instance=ExtResource( 5 )]
+[node name="hood-0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 264, 80 )
 __meta__ = {
 "_edit_group_": true

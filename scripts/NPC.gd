@@ -6,7 +6,6 @@ onready var dialogue_prompt = $"dialogue-prompt"
 onready var prompt_animplayer = $"prompt-animplayer"
 
 var in_speaking_range = false
-var is_speaking = false
 
 func _ready():
 	npc_animation_player.play("Idle")
@@ -22,17 +21,16 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	if body.name == "Player":
 		in_speaking_range = false
-		is_speaking = false
 		dialogue_prompt.hide()
 		Dialogue.end_dialogue()
 		print("out of range to speak to NPC")
 
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
-		if in_speaking_range and !is_speaking:
-			is_speaking = true
-			Dialogue.play_dialogue(name)
+	if Input.is_action_just_released("ui_accept"):
+		if in_speaking_range:
+			Dialogue.show_dialogue(name)
 			face_player()
+		
 
 func face_player():
 	if Global.player.position.x > position.x:
