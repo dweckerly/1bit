@@ -27,7 +27,7 @@ func _physics_process(delta):
 		animation_player.play("Run")
 		if input_vector.x > 0:
 			sprite.flip_h = true
-		else:
+		elif input_vector.x < 0:
 			sprite.flip_h = false
 		velocity = velocity.move_toward(input_vector * SPEED, ACCELERATION * delta)
 	else:
