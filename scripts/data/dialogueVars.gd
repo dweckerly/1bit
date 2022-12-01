@@ -1,7 +1,13 @@
 extends Node
 
 const dialogues = {
-	"hood-0" : ["Don't go this way. This is a long \nstring of text to test the typing\nsystem", 
-	"Snakes... are super scary. I once\nhad a snake pet and it bit me.",
-	"That's all I guess..."]
+	"hood-0" : 
+		[
+			"Don't go this way.", 
+			"Snakes are super scary.\nI once had a pet snake and it\nbit me."
+		],
+	"ninja-0":
+		[
+			"Watch your back, friend."
+		],
 }
