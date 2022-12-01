@@ -8,6 +8,6 @@ const dialogues = {
 		],
 	"ninja-0":
 		[
-			"Watch your back, friend."
+			"Watch your back, bucko."
 		],
 }
