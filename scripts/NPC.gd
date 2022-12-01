@@ -23,7 +23,7 @@ func _on_Area2D_body_exited(body):
 		dialogue_prompt.hide()
 		Dialogue.end_dialogue()
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_released("ui_accept"):
 		if in_speaking_range:
 			Dialogue.show_dialogue(name)

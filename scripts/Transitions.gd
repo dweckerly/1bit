@@ -3,7 +3,7 @@ extends Node
 const NORTH_SOUTH_OFFSET = 155
 const EAST_WEST_OFFSET = 290
 
-func change_scene(area, position):
+func change_scene(area, position, h_flip):
 	var path = ""
 	var player_position = Vector2.ZERO
 	
@@ -29,4 +29,4 @@ func change_scene(area, position):
 		path = "res://scenes/world/area-0.tscn"
 		player_position = Vector2(160, 90)
 	
-	Global.goto_scene(path, player_position)
+	Global.goto_scene(path, player_position, h_flip)
