@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/world/Portal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/world/Portals/Portal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/environment/rocks/rock-wall-1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/characters/NPC.tscn" type="PackedScene" id=5]
@@ -16,7 +16,7 @@
 [ext_resource path="res://scenes/environment/rocks/rock-1.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/environment/rocks/rock-0.tscn" type="PackedScene" id=15]
 [ext_resource path="res://art/environment/ground/dirt-2.png" type="Texture" id=16]
-[ext_resource path="res://scenes/world/Portal-Vertical.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/world/Portals/Portal-Vertical.tscn" type="PackedScene" id=17]
 
 [node name="YSort" type="YSort"]
 
@@ -116,6 +116,9 @@ position = Vector2( 208, 176 )
 
 [node name="1-North" parent="." instance=ExtResource( 2 )]
 position = Vector2( 160, 0 )
+
+[node name="1-South" parent="." instance=ExtResource( 2 )]
+position = Vector2( 160, 184 )
 
 [node name="1-East" parent="." instance=ExtResource( 17 )]
 position = Vector2( 320, 96 )

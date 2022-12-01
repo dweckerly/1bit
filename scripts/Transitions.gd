@@ -31,6 +31,12 @@ func change_scene(area, position, h_flip):
 	elif area == "4-West":
 		path = "res://scenes/world/area-2.tscn"
 		player_position = Vector2(position.x + EAST_WEST_OFFSET, position.y)
+	elif area == "4-North":
+		path = "res://scenes/world/area-5.tscn"
+		player_position = Vector2(position.x, position.y + NORTH_SOUTH_OFFSET)
+	elif area == "5-South":
+		path = "res://scenes/world/area-4.tscn"
+		player_position = Vector2(position.x, position.y - NORTH_SOUTH_OFFSET)
 	else:
 		path = "res://scenes/world/area-0.tscn"
 		player_position = Vector2(160, 90)
