@@ -32,12 +32,8 @@ func show_dialogue(npc_id):
 func play_dialogue(npc_id):
 	var text = data.dialogues[npc_id]
 	if count < text.size():
-		if typing:
-			typing = false
-			type_text(text[count])
-		else:
-			typing = true
-			type_text(text[count])
+		typing = !typing
+		type_text(text[count])
 	else:
 		end_dialogue()
 
