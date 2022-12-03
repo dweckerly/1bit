@@ -10,4 +10,9 @@ const dialogues = {
 		[
 			"Watch your back, bucko."
 		],
+	"snek" :
+		[
+			"Whatssssss the matter?",
+			"I don't bite."
+		]
 }
