@@ -13,6 +13,7 @@ var text_node = dialogue.get_child(1)
 var active_dialogue = false
 var typing = false
 var count = -1
+var dialogue_text = []
 
 func show_dialogue(npc_id):
 	text_node.text = ""
@@ -27,13 +28,14 @@ func show_dialogue(npc_id):
 			dialogue.position = TOP_POS
 	if !typing:
 		count += 1
-	play_dialogue(npc_id)
+	if dialogue_text.size() == 0:
+		dialogue_text = determine_text(npc_id)
+	play_dialogue()
 
-func play_dialogue(npc_id):
-	var text = data.dialogues[npc_id]
-	if count < text.size():
+func play_dialogue():
+	if count < dialogue_text.size():
 		typing = !typing
-		type_text(text[count])
+		type_text(dialogue_text[count])
 	else:
 		end_dialogue()
 
@@ -48,7 +50,11 @@ func type_text(text):
 	typing = false
 
 func end_dialogue():
+	dialogue_text = []
 	if active_dialogue:
 		active_dialogue = false
 		typing = false
 		get_tree().root.call_deferred("remove_child", dialogue)
+	
+func determine_text(npc_id):
+	return data.dialogues[npc_id].text
