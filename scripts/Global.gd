@@ -7,6 +7,7 @@ var player = player_scene.instance()
 var player_can_move = true
 
 var hud_scene = load("res://scenes/ui/HUD.tscn")
+var hud = hud_scene.instance()
 
 var current_scene = null
 
@@ -33,7 +34,7 @@ func load_player(player_position, h_flip):
 	player.get_child(0).flip_h = h_flip
 
 func load_hud():
-	var hud = hud_scene.instance()
+	hud = hud_scene.instance()
 	get_tree().current_scene.add_child(hud)
 	hud.instantiate_hud()
 	
