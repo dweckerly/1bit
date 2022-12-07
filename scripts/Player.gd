@@ -9,8 +9,8 @@ var velocity = Vector2.ZERO
 onready var animation_player = $AnimationPlayer
 onready var sprite = $Sprite
 
-func _ready():
-	pass
+var max_hp = 12
+var current_hp = 7
 	
 func set_position(pos):
 	position = pos

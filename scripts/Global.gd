@@ -6,6 +6,8 @@ var player_scene = load("res://scenes/Player.tscn")
 var player = player_scene.instance()
 var player_can_move = true
 
+var hud_scene = load("res://scenes/ui/HUD.tscn")
+
 var current_scene = null
 
 func _ready():
@@ -22,9 +24,16 @@ func _deferred_goto_scene(path, player_position, h_flip):
 	get_tree().root.add_child(current_scene)
 	get_tree().current_scene = current_scene
 	load_player(player_position, h_flip)
+	load_hud()
 
 func load_player(player_position, h_flip):
 	player = player_scene.instance()
 	get_tree().current_scene.add_child(player)
 	player.set_position(Vector2(player_position))
 	player.get_child(0).flip_h = h_flip
+
+func load_hud():
+	var hud = hud_scene.instance()
+	get_tree().current_scene.add_child(hud)
+	hud.instantiate_hud()
+	
