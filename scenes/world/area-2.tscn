@@ -22,11 +22,11 @@ position = Vector2( 200, 120 )
 texture = ExtResource( 5 )
 
 [node name="Dirt-3" type="Sprite" parent="dirt"]
-position = Vector2( 24, 72 )
+position = Vector2( 24, 96 )
 texture = ExtResource( 8 )
 
 [node name="Dirt-4" type="Sprite" parent="dirt"]
-position = Vector2( 80, 96 )
+position = Vector2( 80, 128 )
 texture = ExtResource( 7 )
 
 [node name="Dirt-5" type="Sprite" parent="dirt"]
@@ -36,103 +36,103 @@ texture = ExtResource( 8 )
 [node name="rock wall" type="Node2D" parent="."]
 
 [node name="rock-wall-0" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 16, 16 )
+position = Vector2( 16, 40 )
 
 [node name="rock-wall-1" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 48 )
+position = Vector2( 16, 72 )
 
 [node name="rock-wall-2" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 16, 144 )
+position = Vector2( 16, 168 )
 
 [node name="rock-wall-3" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 176 )
+position = Vector2( 16, 200 )
 
 [node name="rock-wall-4" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 48, 144 )
+position = Vector2( 48, 168 )
 
 [node name="rock-wall-5" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 144 )
+position = Vector2( 80, 168 )
 
 [node name="rock-wall-6" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 48, 48 )
+position = Vector2( 48, 72 )
 
 [node name="rock-wall-7" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 80, 48 )
+position = Vector2( 80, 72 )
 
 [node name="rock-wall-8" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 112, 48 )
+position = Vector2( 112, 72 )
 
 [node name="rock-wall-9" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 112, 144 )
+position = Vector2( 112, 168 )
 
 [node name="rock-wall-10" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 48, 16 )
+position = Vector2( 48, 40 )
 
 [node name="rock-wall-11" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 16 )
+position = Vector2( 80, 40 )
 
 [node name="rock-wall-12" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 112, 16 )
+position = Vector2( 112, 40 )
 
 [node name="rock-wall-13" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 48, 176 )
+position = Vector2( 48, 200 )
 
 [node name="rock-wall-14" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 176 )
+position = Vector2( 80, 200 )
 
 [node name="rock-wall-15" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 112, 176 )
+position = Vector2( 112, 200 )
 
 [node name="rock-wall-16" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 144, 144 )
+position = Vector2( 144, 168 )
 
 [node name="rock-wall-17" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 176, 144 )
+position = Vector2( 176, 168 )
 
 [node name="rock-wall-18" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 208, 144 )
+position = Vector2( 208, 168 )
 
 [node name="rock-wall-19" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 144, 16 )
+position = Vector2( 144, 40 )
 
 [node name="rock-wall-20" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 144, 48 )
+position = Vector2( 144, 72 )
 
 [node name="rock-wall-21" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 176, 48 )
+position = Vector2( 176, 72 )
 
 [node name="rock-wall-22" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 176, 16 )
+position = Vector2( 176, 40 )
 
 [node name="rock-wall-23" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 176, 176 )
+position = Vector2( 176, 200 )
 
 [node name="rock-wall-24" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 144, 176 )
+position = Vector2( 144, 200 )
 
 [node name="rock-wall-25" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 208, 48 )
+position = Vector2( 208, 72 )
 
 [node name="rock-wall-26" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 208, 176 )
+position = Vector2( 208, 200 )
 
 [node name="rock-wall-27" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 240, 176 )
+position = Vector2( 240, 200 )
 
 [node name="rock-wall-28" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 240, 144 )
+position = Vector2( 240, 168 )
 
 [node name="rock-wall-29" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 240, 48 )
+position = Vector2( 240, 72 )
 
 [node name="rock-wall-30" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 208, 16 )
+position = Vector2( 208, 40 )
 
 [node name="rock-wall-31" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 240, 16 )
+position = Vector2( 240, 40 )
 
 [node name="rock-wall-32" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 272, -16 )
+position = Vector2( 272, 8 )
 
 [node name="rock-wall-33" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 304, -16 )
@@ -144,7 +144,7 @@ position = Vector2( 272, 200 )
 position = Vector2( 304, 200 )
 
 [node name="2-West" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 96 )
+position = Vector2( 0, 120 )
 
 [node name="tree-1" parent="." instance=ExtResource( 9 )]
 position = Vector2( 304, 112 )
@@ -168,10 +168,10 @@ position = Vector2( 288, 216 )
 position = Vector2( 280, 48 )
 
 [node name="stump-0" parent="." instance=ExtResource( 6 )]
-position = Vector2( 232, 88 )
+position = Vector2( 248, 120 )
 
 [node name="2-East" parent="." instance=ExtResource( 12 )]
 position = Vector2( 328, 80 )
 
 [node name="snek" parent="." instance=ExtResource( 11 )]
-position = Vector2( 148, 99 )
+position = Vector2( 144, 120 )
