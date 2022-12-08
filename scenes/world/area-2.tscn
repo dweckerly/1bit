@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/world/Portals/Portal-Vertical.tscn" type="PackedScene" id=2]
@@ -12,6 +12,23 @@
 [ext_resource path="res://scenes/environment/trees/tree-1.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/characters/snek.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/world/Portals/Portal-Vertical-long.tscn" type="PackedScene" id=12]
+[ext_resource path="res://art/environment/rocks/rock-wall-2.png" type="Texture" id=13]
+[ext_resource path="res://art/environment/rocks/rock-wall-0.png" type="Texture" id=14]
+[ext_resource path="res://art/environment/rocks/rock-wall-1.png" type="Texture" id=15]
+[ext_resource path="res://art/environment/rocks/rock-cluster-small-2.png" type="Texture" id=16]
+[ext_resource path="res://art/environment/rocks/rock-cluster-2.png" type="Texture" id=17]
+[ext_resource path="res://art/environment/rocks/rock-cluster-small-0.png" type="Texture" id=18]
+[ext_resource path="res://art/environment/rocks/rock-cluster-small-1.png" type="Texture" id=19]
+[ext_resource path="res://art/environment/rocks/rock-cluster-1.png" type="Texture" id=20]
+[ext_resource path="res://art/environment/rocks/rock-big-1.png" type="Texture" id=21]
+[ext_resource path="res://art/environment/rocks/rock-cluster-0.png" type="Texture" id=22]
+[ext_resource path="res://art/environment/rocks/rock-0.png" type="Texture" id=23]
+[ext_resource path="res://art/environment/rocks/rock-1.png" type="Texture" id=24]
+[ext_resource path="res://art/environment/rocks/rock-2.png" type="Texture" id=25]
+[ext_resource path="res://art/environment/rocks/rock-3.png" type="Texture" id=26]
+[ext_resource path="res://art/environment/rocks/rock-big-0.png" type="Texture" id=27]
+[ext_resource path="res://scenes/environment/rocks/rock-cluster-0.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/environment/rocks/rock-cluster-2.tscn" type="PackedScene" id=29]
 
 [node name="YSort" type="YSort"]
 
@@ -35,53 +52,23 @@ texture = ExtResource( 8 )
 
 [node name="rock wall" type="Node2D" parent="."]
 
-[node name="rock-wall-0" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 16, 40 )
-
 [node name="rock-wall-1" parent="rock wall" instance=ExtResource( 3 )]
 position = Vector2( 16, 72 )
 
 [node name="rock-wall-2" parent="rock wall" instance=ExtResource( 4 )]
 position = Vector2( 16, 168 )
 
-[node name="rock-wall-3" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 200 )
-
 [node name="rock-wall-4" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 48, 168 )
 
 [node name="rock-wall-5" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 168 )
+position = Vector2( 112, 168 )
 
 [node name="rock-wall-6" parent="rock wall" instance=ExtResource( 3 )]
 position = Vector2( 48, 72 )
 
 [node name="rock-wall-7" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 80, 72 )
-
-[node name="rock-wall-8" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 112, 72 )
-
-[node name="rock-wall-9" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 112, 168 )
-
-[node name="rock-wall-10" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 48, 40 )
-
-[node name="rock-wall-11" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 40 )
-
-[node name="rock-wall-12" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 112, 40 )
-
-[node name="rock-wall-13" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 48, 200 )
-
-[node name="rock-wall-14" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 80, 200 )
-
-[node name="rock-wall-15" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 112, 200 )
 
 [node name="rock-wall-16" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 144, 168 )
@@ -92,32 +79,14 @@ position = Vector2( 176, 168 )
 [node name="rock-wall-18" parent="rock wall" instance=ExtResource( 4 )]
 position = Vector2( 208, 168 )
 
-[node name="rock-wall-19" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 144, 40 )
-
 [node name="rock-wall-20" parent="rock wall" instance=ExtResource( 3 )]
 position = Vector2( 144, 72 )
 
 [node name="rock-wall-21" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 176, 72 )
 
-[node name="rock-wall-22" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 176, 40 )
-
-[node name="rock-wall-23" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 176, 200 )
-
-[node name="rock-wall-24" parent="rock wall" instance=ExtResource( 3 )]
-position = Vector2( 144, 200 )
-
 [node name="rock-wall-25" parent="rock wall" instance=ExtResource( 4 )]
 position = Vector2( 208, 72 )
-
-[node name="rock-wall-26" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 208, 200 )
-
-[node name="rock-wall-27" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 240, 200 )
 
 [node name="rock-wall-28" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 240, 168 )
@@ -125,23 +94,166 @@ position = Vector2( 240, 168 )
 [node name="rock-wall-29" parent="rock wall" instance=ExtResource( 3 )]
 position = Vector2( 240, 72 )
 
-[node name="rock-wall-30" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 208, 40 )
-
-[node name="rock-wall-31" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 240, 40 )
-
 [node name="rock-wall-32" parent="rock wall" instance=ExtResource( 1 )]
 position = Vector2( 272, 8 )
 
 [node name="rock-wall-33" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 304, -16 )
+position = Vector2( 304, 8 )
 
 [node name="rock-wall-34" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 272, 200 )
+position = Vector2( 240, 200 )
 
 [node name="rock-wall-35" parent="rock wall" instance=ExtResource( 1 )]
-position = Vector2( 304, 200 )
+position = Vector2( 272, 232 )
+
+[node name="Rock-1" type="Sprite" parent="rock wall"]
+position = Vector2( 120, 224 )
+texture = ExtResource( 24 )
+
+[node name="Rock-2" type="Sprite" parent="rock wall"]
+position = Vector2( 192, 192 )
+texture = ExtResource( 25 )
+
+[node name="Rock-3" type="Sprite" parent="rock wall"]
+position = Vector2( 56, 224 )
+texture = ExtResource( 26 )
+
+[node name="Rock-4" type="Sprite" parent="rock wall"]
+position = Vector2( 168, 48 )
+texture = ExtResource( 25 )
+
+[node name="Rock-cluster-2" type="Sprite" parent="rock wall"]
+position = Vector2( 16, 40 )
+texture = ExtResource( 17 )
+
+[node name="Rock-wall-1" type="Sprite" parent="rock wall"]
+position = Vector2( 112, 40 )
+texture = ExtResource( 15 )
+
+[node name="Rock-wall-2" type="Sprite" parent="rock wall"]
+position = Vector2( 144, 40 )
+texture = ExtResource( 13 )
+
+[node name="Rock-cluster-small-2" type="Sprite" parent="rock wall"]
+position = Vector2( 8, 16 )
+texture = ExtResource( 16 )
+
+[node name="Rock-wall-0" type="Sprite" parent="rock wall"]
+position = Vector2( 16, 200 )
+texture = ExtResource( 14 )
+
+[node name="Rock-wall-3" type="Sprite" parent="rock wall"]
+position = Vector2( 48, 200 )
+texture = ExtResource( 15 )
+
+[node name="Rock-wall-4" type="Sprite" parent="rock wall"]
+position = Vector2( 80, 208 )
+texture = ExtResource( 13 )
+
+[node name="Rock-wall-5" type="Sprite" parent="rock wall"]
+position = Vector2( 48, 40 )
+texture = ExtResource( 13 )
+
+[node name="Rock-cluster-0" type="Sprite" parent="rock wall"]
+position = Vector2( 80, 40 )
+texture = ExtResource( 22 )
+
+[node name="Rock-wall-6" type="Sprite" parent="rock wall"]
+position = Vector2( 80, 8 )
+texture = ExtResource( 15 )
+
+[node name="Rock-wall-7" type="Sprite" parent="rock wall"]
+position = Vector2( 48, 8 )
+texture = ExtResource( 13 )
+
+[node name="Rock-wall-8" type="Sprite" parent="rock wall"]
+position = Vector2( 112, 8 )
+texture = ExtResource( 14 )
+
+[node name="Rock-cluster-1" type="Sprite" parent="rock wall"]
+position = Vector2( 176, 32 )
+texture = ExtResource( 20 )
+
+[node name="Rock-wall-9" type="Sprite" parent="rock wall"]
+position = Vector2( 208, 40 )
+texture = ExtResource( 14 )
+
+[node name="Rock-cluster-3" type="Sprite" parent="rock wall"]
+position = Vector2( 240, 8 )
+texture = ExtResource( 17 )
+
+[node name="Rock-wall-10" type="Sprite" parent="rock wall"]
+position = Vector2( 208, 8 )
+texture = ExtResource( 15 )
+
+[node name="rock-wall-3" parent="rock wall" instance=ExtResource( 4 )]
+position = Vector2( 304, 232 )
+
+[node name="rock-wall-10" parent="rock wall" instance=ExtResource( 3 )]
+position = Vector2( 240, 40 )
+
+[node name="Rock-cluster-small-0" type="Sprite" parent="rock wall"]
+position = Vector2( 136, 16 )
+texture = ExtResource( 18 )
+
+[node name="Rock-cluster-4" type="Sprite" parent="rock wall"]
+position = Vector2( 112, 200 )
+texture = ExtResource( 20 )
+
+[node name="Rock-wall-11" type="Sprite" parent="rock wall"]
+position = Vector2( 144, 200 )
+texture = ExtResource( 13 )
+
+[node name="Rock-cluster-5" type="Sprite" parent="rock wall"]
+position = Vector2( 176, 200 )
+texture = ExtResource( 22 )
+
+[node name="Rock-cluster-small-1" type="Sprite" parent="rock wall"]
+position = Vector2( 216, 192 )
+texture = ExtResource( 19 )
+
+[node name="Rock-cluster-small-3" type="Sprite" parent="rock wall"]
+position = Vector2( 200, 208 )
+texture = ExtResource( 18 )
+
+[node name="Rock-wall-12" type="Sprite" parent="rock wall"]
+position = Vector2( 240, 232 )
+texture = ExtResource( 15 )
+
+[node name="Rock-wall-13" type="Sprite" parent="rock wall"]
+position = Vector2( 208, 232 )
+texture = ExtResource( 13 )
+
+[node name="Rock-wall-14" type="Sprite" parent="rock wall"]
+position = Vector2( 176, 232 )
+texture = ExtResource( 14 )
+
+[node name="Rock-wall-15" type="Sprite" parent="rock wall"]
+position = Vector2( 16, 232 )
+texture = ExtResource( 15 )
+
+[node name="Rock-cluster-small-4" type="Sprite" parent="rock wall"]
+position = Vector2( 40, 224 )
+texture = ExtResource( 18 )
+
+[node name="Rock-wall-16" type="Sprite" parent="rock wall"]
+position = Vector2( 96, 240 )
+texture = ExtResource( 14 )
+
+[node name="Rock-big-2" type="Sprite" parent="rock wall"]
+position = Vector2( 144, 232 )
+texture = ExtResource( 21 )
+
+[node name="Rock-0" type="Sprite" parent="rock wall"]
+position = Vector2( 72, 240 )
+texture = ExtResource( 23 )
+
+[node name="Rock-big-0" type="Sprite" parent="rock wall"]
+position = Vector2( 160, 8 )
+texture = ExtResource( 27 )
+
+[node name="rock-cluster-2" parent="rock wall" instance=ExtResource( 29 )]
+position = Vector2( 80, 176 )
 
 [node name="2-West" parent="." instance=ExtResource( 2 )]
 position = Vector2( -8, 120 )
@@ -162,16 +274,19 @@ position = Vector2( 280, 152 )
 position = Vector2( 304, 168 )
 
 [node name="tree-6" parent="." instance=ExtResource( 9 )]
-position = Vector2( 288, 216 )
+position = Vector2( 304, 208 )
 
 [node name="tree-7" parent="." instance=ExtResource( 10 )]
 position = Vector2( 280, 48 )
 
 [node name="stump-0" parent="." instance=ExtResource( 6 )]
-position = Vector2( 248, 120 )
+position = Vector2( 240, 136 )
 
 [node name="2-East" parent="." instance=ExtResource( 12 )]
-position = Vector2( 328, 80 )
+position = Vector2( 328, 112 )
 
 [node name="snek" parent="." instance=ExtResource( 11 )]
 position = Vector2( 144, 120 )
+
+[node name="rock-cluster-0" parent="." instance=ExtResource( 28 )]
+position = Vector2( 112, 80 )

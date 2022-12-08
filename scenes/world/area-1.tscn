@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/environment/rocks/rock-wall-0.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/world/Portals/Portal.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-small-2.tscn" type="PackedScene" id=21]
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-small-0.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-2.tscn" type="PackedScene" id=23]
+[ext_resource path="res://art/environment/ground/dirt-1.png" type="Texture" id=24]
 
 [node name="YSort" type="YSort"]
 
@@ -33,7 +34,7 @@ position = Vector2( 136, 192 )
 texture = ExtResource( 10 )
 
 [node name="Dirt-3" type="Sprite" parent="dirt"]
-position = Vector2( 72, 72 )
+position = Vector2( 152, 48 )
 texture = ExtResource( 13 )
 
 [node name="Dirt-4" type="Sprite" parent="dirt"]
@@ -51,6 +52,10 @@ texture = ExtResource( 13 )
 [node name="Dirt-2" type="Sprite" parent="dirt"]
 position = Vector2( 272, 48 )
 texture = ExtResource( 16 )
+
+[node name="Dirt-1" type="Sprite" parent="dirt"]
+position = Vector2( 64, 80 )
+texture = ExtResource( 24 )
 
 [node name="rock wall" type="Node2D" parent="."]
 
@@ -175,7 +180,7 @@ position = Vector2( 232, 216 )
 position = Vector2( 248, 32 )
 
 [node name="hood-0" parent="." instance=ExtResource( 5 )]
-position = Vector2( 256, 96 )
+position = Vector2( 272, 120 )
 __meta__ = {
 "_edit_group_": true
 }
