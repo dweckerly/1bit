@@ -25,5 +25,13 @@ const dialogues = {
 					"What'ssssss the matter?",
 					"I don't bite."
 				]
-		}
+		},
+	"moon-man" :
+		{
+			"text": 
+				[
+					"IT'S THE MOON MAN, BABY! COME\nON SHINE WITH ME A LITTLE.",
+					"YOU READY TO SHINE, MY BABY?"
+				]
+		},
 }

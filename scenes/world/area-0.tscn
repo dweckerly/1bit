@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://art/environment/ground/dirt-11.png" type="Texture" id=1]
 [ext_resource path="res://scenes/world/Portals/Portal.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-1.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-2.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/environment/rocks/rock-2.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/environment/rocks/rock-cluster-small-1.tscn" type="PackedScene" id=17]
 
 [node name="YSort" type="YSort"]
 script = ExtResource( 10 )
@@ -96,9 +97,6 @@ position = Vector2( 312, 80 )
 [node name="rock-wall-17" parent="rock wall" instance=ExtResource( 6 )]
 position = Vector2( 304, 112 )
 
-[node name="rock-wall-18" parent="rock wall" instance=ExtResource( 4 )]
-position = Vector2( 304, 144 )
-
 [node name="rock-wall-19" parent="rock wall" instance=ExtResource( 5 )]
 position = Vector2( 304, 224 )
 
@@ -109,7 +107,7 @@ position = Vector2( 48, 224 )
 position = Vector2( 80, 232 )
 
 [node name="rock-wall-22" parent="rock wall" instance=ExtResource( 5 )]
-position = Vector2( 272, 224 )
+position = Vector2( 272, 240 )
 
 [node name="rock-wall-23" parent="rock wall" instance=ExtResource( 6 )]
 position = Vector2( 240, 224 )
@@ -119,6 +117,24 @@ position = Vector2( 208, 224 )
 
 [node name="rock-wall-25" parent="rock wall" instance=ExtResource( 5 )]
 position = Vector2( 112, 224 )
+
+[node name="rock-cluster-0" parent="rock wall" instance=ExtResource( 13 )]
+position = Vector2( 48, 200 )
+
+[node name="rock-cluster-1" parent="rock wall" instance=ExtResource( 14 )]
+position = Vector2( 272, 48 )
+
+[node name="rock-cluster-4" parent="rock wall" instance=ExtResource( 14 )]
+position = Vector2( 304, 144 )
+
+[node name="rock-cluster-2" parent="rock wall" instance=ExtResource( 13 )]
+position = Vector2( 304, 24 )
+
+[node name="rock-cluster-3" parent="rock wall" instance=ExtResource( 15 )]
+position = Vector2( 48, 48 )
+
+[node name="rock-cluster-small-1" parent="rock wall" instance=ExtResource( 17 )]
+position = Vector2( 264, 224 )
 
 [node name="0-South" parent="." instance=ExtResource( 2 )]
 position = Vector2( 160, 248 )
@@ -134,18 +150,6 @@ position = Vector2( 240, 64 )
 
 [node name="rock-0" parent="." instance=ExtResource( 12 )]
 position = Vector2( 88, 208 )
-
-[node name="rock-cluster-0" parent="." instance=ExtResource( 13 )]
-position = Vector2( 48, 200 )
-
-[node name="rock-cluster-1" parent="." instance=ExtResource( 14 )]
-position = Vector2( 272, 48 )
-
-[node name="rock-cluster-2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 304, 24 )
-
-[node name="rock-cluster-3" parent="." instance=ExtResource( 15 )]
-position = Vector2( 48, 48 )
 
 [node name="rock-2" parent="." instance=ExtResource( 16 )]
 position = Vector2( 56, 160 )
