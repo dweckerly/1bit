@@ -144,7 +144,7 @@ position = Vector2( 272, 200 )
 position = Vector2( 304, 200 )
 
 [node name="2-West" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 120 )
+position = Vector2( -8, 120 )
 
 [node name="tree-1" parent="." instance=ExtResource( 9 )]
 position = Vector2( 304, 112 )

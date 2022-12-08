@@ -1,6 +1,6 @@
 extends Node
 
-const BOTTOM_POS = Vector2(160, 148)
+const BOTTOM_POS = Vector2(160, 208)
 const TOP_POS = Vector2(160, 32)
 
 const TYPE_SPEED = 0.02

@@ -17,7 +17,7 @@
 [ext_resource path="res://scenes/environment/rocks/rock-0.tscn" type="PackedScene" id=15]
 [ext_resource path="res://art/environment/ground/dirt-2.png" type="Texture" id=16]
 [ext_resource path="res://scenes/world/Portals/Portal-Vertical.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/environment/rocks/rock-cluster-1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/environment/rocks/rock-breakable-0.tscn" type="PackedScene" id=18]
 [ext_resource path="res://scenes/environment/rocks/rock-3.tscn" type="PackedScene" id=19]
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-small-1.tscn" type="PackedScene" id=20]
 [ext_resource path="res://scenes/environment/rocks/rock-cluster-small-2.tscn" type="PackedScene" id=21]
@@ -141,17 +141,14 @@ position = Vector2( 280, 216 )
 [node name="rock-cluster-small-0" parent="rock wall" instance=ExtResource( 22 )]
 position = Vector2( 40, 136 )
 
-[node name="rock-cluster-1" parent="rock wall" instance=ExtResource( 18 )]
-position = Vector2( 8, 176 )
-
 [node name="1-North" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 0 )
+position = Vector2( 160, -8 )
 
 [node name="1-South" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 240 )
+position = Vector2( 160, 248 )
 
 [node name="1-East" parent="." instance=ExtResource( 17 )]
-position = Vector2( 320, 128 )
+position = Vector2( 328, 128 )
 
 [node name="fence" parent="." instance=ExtResource( 6 )]
 position = Vector2( 104, 168 )
@@ -182,3 +179,6 @@ position = Vector2( 256, 96 )
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="rock-breakable-0" parent="." instance=ExtResource( 18 )]
+position = Vector2( 8, 184 )

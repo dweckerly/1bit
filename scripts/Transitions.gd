@@ -1,7 +1,7 @@
 extends Node
 
-const NORTH_SOUTH_OFFSET = 155
-const EAST_WEST_OFFSET = 290
+const NORTH_SOUTH_OFFSET = 220
+const EAST_WEST_OFFSET = 300
 
 func change_scene(area, position, h_flip):
 	var path = ""
