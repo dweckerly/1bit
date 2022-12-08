@@ -1,6 +1,7 @@
 extends Control
 
-const HEART_OFFSET = 10
+const HEART_X_OFFSET = 8
+const HEART_Y_OFFSET = 9
 
 onready var heart_container
 
@@ -13,11 +14,10 @@ func instantiate_hud():
 func add_hearts():
 	heart_container = $HeartContainer
 	hearts = Global.player.max_hp / 4
-	print(hearts)
 	for n in hearts:
 		var heart = heart_scene.instance()
 		$HeartContainer.add_child(heart)
-		heart.position = Vector2((16 * n) + HEART_OFFSET, HEART_OFFSET)
+		heart.position = Vector2((16 * n) + HEART_X_OFFSET, HEART_Y_OFFSET)
 	fill_hearts()
 
 func fill_hearts():
