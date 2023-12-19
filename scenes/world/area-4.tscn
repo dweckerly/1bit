@@ -14,22 +14,22 @@ extents = Vector2( 161, 10 )
 [node name="area-4" type="YSort"]
 
 [node name="tree-1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 104, 152 )
+position = Vector2( 104, 192 )
 
 [node name="tree-2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 24, 72 )
 
 [node name="tree-3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16, 192 )
+position = Vector2( 16, 232 )
 
 [node name="tree-4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 48, 208 )
+position = Vector2( 48, 248 )
 
 [node name="tree-5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 160, 237 )
+position = Vector2( 160, 277 )
 
 [node name="tree-6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 56, 152 )
+position = Vector2( 56, 192 )
 
 [node name="stump-0" parent="." instance=ExtResource( 2 )]
 position = Vector2( 72, 80 )
@@ -50,7 +50,7 @@ position = Vector2( 112, 48 )
 position = Vector2( 216, 56 )
 
 [node name="tree-12" parent="." instance=ExtResource( 3 )]
-position = Vector2( 128, 184 )
+position = Vector2( 128, 224 )
 
 [node name="tree-13" parent="." instance=ExtResource( 1 )]
 position = Vector2( 248, 40 )
@@ -59,40 +59,40 @@ position = Vector2( 248, 40 )
 position = Vector2( 264, 72 )
 
 [node name="tree-15" parent="." instance=ExtResource( 1 )]
-position = Vector2( 232, 205 )
+position = Vector2( 232, 245 )
 
 [node name="tree-16" parent="." instance=ExtResource( 3 )]
-position = Vector2( 200, 200 )
+position = Vector2( 200, 240 )
 
 [node name="tree-17" parent="." instance=ExtResource( 1 )]
-position = Vector2( 280, 221 )
+position = Vector2( 280, 261 )
 
 [node name="tree-19" parent="." instance=ExtResource( 1 )]
 position = Vector2( 296, 64 )
 
 [node name="tree-20" parent="." instance=ExtResource( 1 )]
-position = Vector2( 88, 224 )
+position = Vector2( 88, 264 )
 
 [node name="stump-2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 184, 40 )
 
 [node name="tree-21" parent="." instance=ExtResource( 3 )]
-position = Vector2( 304, 168 )
+position = Vector2( 304, 208 )
 
 [node name="border-south" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="border-south"]
-position = Vector2( 159, 192 )
+position = Vector2( 159, 232 )
 shape = SubResource( 1 )
 
 [node name="grass" type="Node2D" parent="."]
 
 [node name="Grass-0" type="Sprite" parent="grass"]
-position = Vector2( 144, 120 )
+position = Vector2( 144, 128 )
 texture = ExtResource( 5 )
 
 [node name="Grass-1" type="Sprite" parent="grass"]
-position = Vector2( 208, 80 )
+position = Vector2( 208, 96 )
 texture = ExtResource( 6 )
 
 [node name="Grass-2" type="Sprite" parent="grass"]
@@ -102,10 +102,13 @@ texture = ExtResource( 5 )
 [node name="portals" type="Node2D" parent="."]
 
 [node name="4-West" parent="portals" instance=ExtResource( 4 )]
-position = Vector2( -8, 88 )
+position = Vector2( -8, 104 )
+scale = Vector2( 1, 1.48 )
 
 [node name="4-East" parent="portals" instance=ExtResource( 4 )]
-position = Vector2( 328, 88 )
+position = Vector2( 328, 104 )
+scale = Vector2( 1, 1.4 )
 
 [node name="4-North" parent="portals" instance=ExtResource( 7 )]
 position = Vector2( 160, -8 )
+scale = Vector2( 1.09462, 1.00694 )
