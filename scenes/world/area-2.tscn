@@ -223,6 +223,7 @@ position = Vector2( -8, 120 )
 
 [node name="2-East" parent="." instance=ExtResource( 12 )]
 position = Vector2( 328, 112 )
+scale = Vector2( 1, 1.32 )
 
 [node name="tree-1" parent="." instance=ExtResource( 9 )]
 position = Vector2( 304, 112 )

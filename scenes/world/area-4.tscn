@@ -102,11 +102,11 @@ texture = ExtResource( 5 )
 [node name="portals" type="Node2D" parent="."]
 
 [node name="4-West" parent="portals" instance=ExtResource( 4 )]
-position = Vector2( -8, 104 )
+position = Vector2( -16, 104 )
 scale = Vector2( 1, 1.48 )
 
 [node name="4-East" parent="portals" instance=ExtResource( 4 )]
-position = Vector2( 328, 104 )
+position = Vector2( 336, 104 )
 scale = Vector2( 1, 1.4 )
 
 [node name="4-North" parent="portals" instance=ExtResource( 7 )]
